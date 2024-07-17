@@ -1,18 +1,283 @@
-/* Error: Indenting at the beginning of the document is illegal.
- *   ,
- * 1 |     $paletaColores: (principal: #222, secundario: #fafafa)
- *   | ^
- *   '
- *   sass\layouts\_variables.sass 1:1  @import
- *   sass\estilos.sass 1:9             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Indenting at the beginning of the document is illegal.\a   \2577 \a 1 \2502      $paletaColores: (principal: #222, secundario: #fafafa)\a   \2502  ^\a   \2575 \a   sass\\layouts\\_variables.sass 1:1  @import\a   sass\\estilos.sass 1:9             root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+  background-color: #beefa9;
+}
+
+.main_start {
+  display: inline-block;
+  padding: 20px;
+  margin-left: 70px;
+  border: 15px solid rgb(245, 253, 206);
+  background-image: url(../assets/images/Campo1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 700px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main_start h1 {
+  margin: 20px;
+  text-align: center;
+  font-size: 700%;
+  color: rgb(245, 253, 206);
+}
+.main_start h2 {
+  margin: 0px 50px;
+}
+.main_start img {
+  width: 800px;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+.main_start a {
+  background-color: #6e3606;
+  color: white;
+  margin: 15px;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 15px;
+  font-weight: bolder;
+}
+
+.grid-container {
+  margin: 20px;
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.grid-container .div_banda1 {
+  padding: 10px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.grid-container .div_banda1 .grid-fran img {
+  width: 100%;
+  margin: 0px auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.grid-container .div_banda1 .grid-fran img .display-4 {
+  text-align: center;
+}
+
+.main_listend .spotify {
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  justify-items: start;
+  padding: 20px;
+  margin: 20px;
+}
+.main_listend .celebration {
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  justify-items: center;
+  text-align: start;
+}
+.main_listend .celebration .bandcamp {
+  justify-items: center;
+}
+
+.responsive-iframe {
+  border: 0;
+  width: 100%;
+  height: 620px;
+}
+@media (max-width: 1200px) {
+  .responsive-iframe {
+    height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .responsive-iframe {
+    height: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .responsive-iframe {
+    height: 300px;
+  }
+}
+
+.eventos {
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.eventos .contenedor-superior {
+  display: flex;
+}
+.eventos .contenedor-superior img {
+  flex: 30%;
+  margin: 0 10px;
+}
+.eventos .contenedor-superior table {
+  flex: 50%;
+  margin: 0 10px;
+}
+.eventos article {
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (max-width: 1000px) {
+  .eventos .contenedor-superior {
+    flex-direction: column;
+    align-items: center;
+  }
+  .eventos .contenedor-superior img {
+    flex: 100%;
+    margin: 10px 0;
+  }
+  .eventos .contenedor-superior table {
+    flex: 100%;
+    margin: 10px 0;
+  }
+  .eventos article {
+    margin-top: 10px;
+  }
+}
+
+.main_contact {
+  padding: 20px;
+}
+.main_contact h1 {
+  font-weight: bolder;
+}
+.main_contact form {
+  display: grid;
+  gap: 15px;
+}
+.main_contact form .col-md-6, .main_contact form .col-12, .main_contact form .col-md-4, .main_contact form .col-md-2 {
+  margin-bottom: 15px;
+}
+.main_contact form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.main_contact form input, .main_contact form select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.main_contact h2 {
+  margin-top: 30px;
+}
+.main_contact p {
+  margin: 5px 0;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .main_contact {
+    padding: 15px;
+  }
+  footer {
+    padding: 15px;
+  }
+  .main_contact {
+    padding: 10px;
+  }
+  footer {
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .main_contact {
+    padding: 5px;
+  }
+  footer {
+    padding: 5px;
+  }
+}
+.head {
+  background-color: rgba(114, 243, 102, 0.562);
+  padding: 10px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.head .menu ul {
+  padding: 20px 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+}
+.head .menu ul li {
+  list-style: none;
+}
+.head .menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.head .redes {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  padding: 10px 20px;
+}
+.head .redes a i {
+  color: #181717;
+  font-size: 25px;
+}
+@media (max-width: 360px) {
+  .head .redes a i {
+    font-size: 15px;
+  }
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+footer form {
+  margin-bottom: 20px;
+}
+footer form fieldset {
+  border: 1px solid #beefa9;
+  padding: 15px;
+  max-width: 100%;
+}
+footer form fieldset legend {
+  font-weight: bold;
+}
+footer form fieldset label {
+  display: block;
+  margin-bottom: 5px;
+}
+footer form fieldset input[type=text] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+footer form fieldset input[type=submit] {
+  margin-top: 10px;
+  padding: 8px 15px;
+}
+footer p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=estilos.css.map */
