@@ -1,0 +1,18 @@
+/* Error: Indenting at the beginning of the document is illegal.
+ *   ,
+ * 1 |     $paletaColores: (principal: #222, secundario: #fafafa)
+ *   | ^
+ *   '
+ *   sass\layouts\_variables.sass 1:1  @import
+ *   sass\estilos.sass 1:9             root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Indenting at the beginning of the document is illegal.\a   \2577 \a 1 \2502      $paletaColores: (principal: #222, secundario: #fafafa)\a   \2502  ^\a   \2575 \a   sass\\layouts\\_variables.sass 1:1  @import\a   sass\\estilos.sass 1:9             root stylesheet";
+}
