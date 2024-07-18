@@ -72,6 +72,17 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+.grid-container .div_banda1 .grid-fran1 {
+  display: inline-block;
+  overflow: hidden;
+}
+.grid-container .div_banda1 .grid-fran1 img {
+  display: block;
+  transition: transform 1s;
+}
+.grid-container .div_banda1 .grid-fran1 img:hover {
+  transform: scale(1.1) translateX(20px);
+}
 .grid-container .div_banda1 .grid-fran img {
   width: 70%;
   margin: 0px auto;
@@ -143,6 +154,17 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 }
+.eventos .container_events {
+  display: inline-block;
+  overflow: hidden;
+}
+.eventos .container_events img {
+  display: block;
+  transition: transform 1s;
+}
+.eventos .container_events:hover {
+  transform: scale(1.1) translateX(10px);
+}
 
 .main_contact {
   padding: 20px;
@@ -183,7 +205,7 @@ body {
 }
 
 .head {
-  background-color: rgba(114, 243, 102, 0.562);
+  background-image: linear-gradient(rgba(114, 243, 102, 0.5607843137), #064b06);
   padding: 10px 60px;
   display: flex;
   flex-direction: row;
@@ -204,12 +226,23 @@ body {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  transition: 1s;
+}
+.head .menu ul li a:hover {
+  transform: scale(1.5);
+  color: #faf8f8;
 }
 .head .redes {
   display: flex;
   justify-content: space-around;
   width: 200px;
   padding: 10px 20px;
+}
+.head .redes a {
+  transition: 500ms;
+}
+.head .redes a:active {
+  transform: scale(0.8);
 }
 .head .redes a i {
   color: #181717;
@@ -222,11 +255,11 @@ body {
 }
 
 footer {
-  padding: 20px;
-  background-color: #f8f8f8;
+  padding: 10px;
+  background-image: linear-gradient(#064b06, rgba(114, 243, 102, 0.5607843137));
 }
 footer form {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 footer form fieldset {
   border: 5px solid #beefa9;
@@ -244,12 +277,17 @@ footer form fieldset label {
 }
 footer form fieldset input[type=text] {
   width: 60%;
-  padding: 7px;
+  padding: 5px;
   box-sizing: border-box;
 }
 footer form fieldset input[type=submit] {
-  margin-top: 7px;
-  padding: 8px 15px;
+  margin-top: 5px;
+  padding: 6px 15px;
+  transition: 500ms;
+}
+footer form fieldset input[type=submit]:active {
+  background: #1be214;
+  transform: scale(0.8);
 }
 footer p {
   text-align: center;

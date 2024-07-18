@@ -1,9 +1,8 @@
 footer
-  padding: 20px
-  background-color: #f8f8f8
-
+  padding: 10px
+  background-image: linear-gradient(#064b06, #72f3668f)
   form
-    margin-bottom: 15px
+    margin-bottom: 10px
 
     fieldset
       border: 5px solid #beefa9
@@ -21,12 +20,15 @@ footer
 
       input[type="text"]
         width: 60%
-        padding: 7px
+        padding: 5px
         box-sizing: border-box
 
       input[type="submit"]
-        margin-top: 7px
-        padding: 8px 15px
-
+        margin-top: 5px
+        padding: 6px 15px
+        transition: 500ms
+        &:active
+          background: #1be214
+          transform: scale(0.8)
   p
     text-align: center
