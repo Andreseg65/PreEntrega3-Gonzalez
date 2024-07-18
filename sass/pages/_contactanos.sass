@@ -1,15 +1,25 @@
 .main_contact
   padding: 20px
+  margin: 20px
+
+  .form-group
+    gap: 50px
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+  .info_contact div
+    gap: 20px
+    display: flex
+    align-items: center
 
   h1
     font-weight: bolder
 
   form
-    display: grid
-    gap: 15px
+    
 
     .col-md-6, .col-12, .col-md-4, .col-md-2
-      margin-bottom: 15px
+      margin-bottom: 10px
 
     label
       display: block
@@ -24,27 +34,5 @@
     margin-top: 30px
 
   p
-    margin: 5px 0
-
-
-/* Media Queries */
-@media (max-width: 1200px)
-  .main_contact
-    padding: 15px
-
-  footer
-    padding: 15px
-
-  .main_contact
-    padding: 10px
-
-  footer
-    padding: 10px
-
-@media (max-width: 480px)
-
-  .main_contact
-    padding: 5px
-
-  footer
-    padding: 5px
+    margin: 5px 0px
+  

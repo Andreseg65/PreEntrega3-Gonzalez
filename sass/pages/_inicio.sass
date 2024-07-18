@@ -1,39 +1,28 @@
-.main_start
-  display: inline-block
-  padding: 20px
-  margin-left: 70px
-  border: 15px solid rgb(245, 253, 206)
-  background-image: url(../assets/images/Campo1.webp)
-  background-size: cover
-  background-repeat: no-repeat
-  width: 90%
-  height: 700px
-  box-sizing: border-box
+.main_start 
   display: flex
   flex-direction: column
   align-items: center
   justify-content: center
+  padding: 20px
+  margin: 20px auto
+  border: 15px solid $bg-color
+  background-image: $bg-image
+  background-size: cover
+  background-repeat: no-repeat
+  width: 90%
+  height: 700px
+  text-align: center
 
   h1 
-    margin: 20px
-    text-align: center
-    font-size: 700%
-    color: rgb(245, 253, 206)
+    font-size: 3rem
+    margin-bottom: 20px
 
-  h2 
-    margin: 0px 50px
-
-  img
-    width: 800px
-    height: auto
-    position: relative
-    z-index: 2
-
-  a
-    background-color: #6e3606
-    color: white
-    margin: 15px
-    padding: 15px 25px
+  a.bandcamp 
+    font-size: 1.5rem
+    color: $text-color
     text-decoration: none
-    border-radius: 15px
-    font-weight: bolder
+    background-color: rgba(255, 255, 255, 0.8)
+    padding: 10px 20px
+    border-radius: 5px
+    &:hover 
+      background-color: rgba(255, 255, 255, 0.6)

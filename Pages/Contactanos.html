@@ -24,16 +24,16 @@
                 <a class="nav-link" href="../Index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../Pages/LaBanda.html">La Banda</a>
+                <a class="nav-link" href="LaBanda.html">La Banda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../Pages/Escuchanos.html">Escuchanos</a>
+                <a class="nav-link" href="Escuchanos.html">Escuchanos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../Pages/Eventos.html">Eventos</a>
+                <a class="nav-link" href="Eventos.html">Eventos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../Pages/Contactanos.html">Contactanos</a>
+                <a class="nav-link" href="Contactanos.html">Contactanos</a>
               </li>
               
             </ul>
@@ -57,75 +57,85 @@
     </div>
     </header>
     <!-- header fin  -->
-
-    <main class="main_contact">
+    <main class="main_contact">  
       <h1 class="fw-bolder">+Contactanos</h1>
       <h4>Envíanos un mensaje y te responderemos en 24 horas</h4>
+      <div class="form-group">
+        <section class="form_contact"> 
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="abced65@hotmail.com">
+            </div>
+            <div class="col-md-6">
+              <label for="inputAddress" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Calle, número">
+            </div>
+            <div class="col-md-6">
+              <label for="inputAddress2" class="form-label">Dirección2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Dpto, piso, entre calles">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-9">
+              <label for="inputState" class="form-label">Provincia</label>
+              <select id="inputState" class="form-select">
+                <option selected>Elige...</option>
+                <option>Capital Federal</option>
+                <option>Buenos Aires</option>
+                <option>Catamarca</option>
+                <option>Chaco</option>
+                <option>Chubut</option>
+                <option>Córdoba</option>
+                <option>Corrientes</option>
+                <option>Entre Ríos</option>
+                <option>Formosa</option>
+                <option>Jujuy</option>
+                <option>La Pampa</option>
+                <option>La Rioja</option>
+                <option>Mendoza</option>
+                <option>Misiones</option>
+                <option>Neuquen</option>
+                <option>Río Negro</option>
+                <option>Salta</option>
+                <option>San Juan</option>
+                <option>San Luís</option>
+                <option>Santa Cruz</option>
+                <option>Santa Fe</option>
+                <option>Santiago del Estero</option>
+                <option>Tierra del Fuego</option>
+                <option>Antartida</option>
+                <option>Tucumán</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="inputZip" class="form-label">Código Postal</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </section>
+        <section class="info_contact">
+          <h2>Información de Contacto</h2>
+          <div>
+            <i class="fa-solid fa-map-location-dot"></i>
+            <p>Dirección: 177 Huntington Ave Ste 1703</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <p>migret.music@hotmail.com</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <p>+1-617-555-0108</p>  
+          </div>
+        </section>
+      </div>
       
-      <form class="row g-3">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="abced65@hotmail.com">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Dirección</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Calle, númer">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">Dirección2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Dpto, piso, etc.">
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">Ciudad</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">Provincia</label>
-          <select id="inputState" class="form-select">
-            <option selected>Elige...</option>
-            <option>Capital Federal</option>
-            <option>Buenos Aires</option>
-            <option>Catamarca</option>
-            <option>Chaco</option>
-            <option>Chubut</option>
-            <option>Córdoba</option>
-            <option>Corrientes</option>
-            <option>Entre Ríos</option>
-            <option>Formosa</option>
-            <option>Jujuy</option>
-            <option>La Pampa</option>
-            <option>La Rioja</option>
-            <option>Mendoza</option>
-            <option>Misiones</option>
-            <option>Neuquen</option>
-            <option>Río Negro</option>
-            <option>Salta</option>
-            <option>San Juan</option>
-            <option>San Luís</option>
-            <option>Santa Cruz</option>
-            <option>Santa Fe</option>
-            <option>Santiago del Estero</option>
-            <option>Tierra del Fuego</option>
-            <option>Antartida</option>
-            <option>Tucumán</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Código postal</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-      </form>
-
-      <h2>Información de Contacto</h2>
-      <i class="fa-solid fa-map-location-dot"></i>
-      <p>Dirección: 177 Huntington Ave Ste 1703</p>
-      <i class="fa-solid fa-envelope"></i>
-      <p>migret.music@hotmail.com</p>
-      <i class="fa-solid fa-phone"></i>
-      <p>+1-617-555-0108</p>
     </main>
 
     <footer>
