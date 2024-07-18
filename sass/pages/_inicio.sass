@@ -1,4 +1,4 @@
-.main_start 
+.main_start
   display: flex
   flex-direction: column
   align-items: center
@@ -12,17 +12,34 @@
   width: 90%
   height: 700px
   text-align: center
+  color: #f1efef
 
-  h1 
-    font-size: 3rem
+  .distintivo
+    color: $primary-color
+    font-family: $font-stack
+    font-weight: bold
     margin-bottom: 20px
+    font-size: 3em
+    text-align: center
+    padding: 1em
+    background-color: $secondary-color
+    border-radius: 10px
 
-  a.bandcamp 
+  @include box-shadow(0 3px 4px rgba(230, 16, 16, 0.1))
+
+  &:hover
+    color: darken($primary-color, 10%)
+    background-color: lighten($secondary-color, 50%,)
+
+  // h1
+  //   margin-bottom: 20px
+
+  a.bandcamp
     font-size: 1.5rem
     color: $text-color
     text-decoration: none
     background-color: rgba(255, 255, 255, 0.8)
     padding: 10px 20px
-    border-radius: 5px
-    &:hover 
-      background-color: rgba(255, 255, 255, 0.6)
+    border-radius: 10px
+    &:hover
+      background-color: rgba(51, 146, 11, 0.6)

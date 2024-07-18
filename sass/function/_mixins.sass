@@ -7,4 +7,8 @@
     margin: $m
     padding: $p
     background: map-get($paletaColores, principal)
-    
+
+@mixin box-shadow($shadow...)
+    -webkit-box-shadow: $shadow
+    -moz-box-shadow: $shadow
+    box-shadow: $shadow
