@@ -27,30 +27,68 @@ body {
   text-align: center;
   color: #f1efef;
 }
-.main_start .distintivo {
+.main_start:hover {
+  color: #87c1e8;
+  background-color: rgba(143, 149, 143, 0.2549019608);
+}
+
+h1.distintivo {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
   color: #b2d7f0;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: bold;
-  margin-bottom: 20px;
-  font-size: 3em;
   text-align: center;
   padding: 1em;
   background-color: rgba(18, 19, 18, 0.2549019608);
   border-radius: 10px;
 }
-.main_start:hover {
-  color: #87c1e8;
-  background-color: rgba(143, 149, 143, 0.2549019608);
+@media (max-width: 576px) {
+  h1.distintivo {
+    font-size: 1.8rem;
+  }
 }
-.main_start a.bandcamp {
+@media (min-width: 576px) and (max-width: 768px) {
+  h1.distintivo {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  h1.distintivo {
+    font-size: 2.2rem;
+  }
+}
+
+a.bandcamp {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
   font-size: 1.5rem;
   color: #070707;
-  text-decoration: none;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px 20px;
-  border-radius: 10px;
 }
-.main_start a.bandcamp:hover {
+@media (max-width: 576px) {
+  a.bandcamp {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  a.bandcamp {
+    font-size: 1.1rem;
+    padding: 0.45rem 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  a.bandcamp {
+    font-size: 1.15rem;
+    padding: 0.5rem 1rem;
+  }
+}
+a.bandcamp:hover {
+  color: #87c1e8;
   background-color: rgba(51, 146, 11, 0.6);
 }
 
@@ -65,66 +103,61 @@ body {
   justify-items: center;
   align-items: center;
 }
-.grid-container .div_banda1 {
+.grid-container .div_histori {
   padding: 10px;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-.grid-container .div_banda1 .grid-fran1 {
-  display: inline-block;
-  overflow: hidden;
-}
-.grid-container .div_banda1 .grid-fran1 img {
-  display: block;
-  transition: transform 1s;
-}
-.grid-container .div_banda1 .grid-fran1 img:hover {
-  transform: scale(1.1) translateX(20px);
-}
-.grid-container .div_banda1 .grid-fran img {
-  width: 70%;
-  margin: 0px auto;
-  display: block;
   justify-content: center;
   align-items: center;
 }
-.grid-container .div_banda1 .display-4 {
+.grid-container .div_histori h2 {
   text-align: center;
 }
-.grid-container .div_banda1 .display-5 {
-  text-align: center;
+.grid-container .div_histori img {
+  width: 80%;
+  margin: 0px auto;
+  display: block;
+  transition: transform 1s;
+}
+.grid-container .div_histori img:hover {
+  transform: scale(1.1) translateX(20px);
 }
 
-.main_listend .h1 {
-  margin: 20px;
+.franytiti .grid-fran, .franytiti .grid-betsy {
+  text-align: center;
+}
+.franytiti img {
+  width: 500px;
+  height: auto;
+  transition: transform 1s;
+}
+.franytiti img:hover {
+  transform: scale(1.1) translateX(20px);
+}
+
+.main_listend {
   padding: 20px;
 }
-.main_listend .spotify {
-  margin: 20px;
-  padding: 20px;
-  display: grid;
-  justify-items: start;
-  padding: 20px;
-  margin: 20px;
-}
-.main_listend .celebration {
-  margin: 20px;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  justify-items: center;
+.main_listend h1 {
   text-align: start;
+  margin-bottom: 20px;
 }
-.main_listend .celebration .bandcamp {
-  justify-items: center;
+.main_listend .spotify .bandcamp {
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
 }
-.main_listend .celebration .bandcamp .responsive-iframe {
-  border: 0;
-  width: 130%;
-  height: 550px;
+
+.celebration .container .row .col-md-6 .bandcamp {
+  position: relative;
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.celebration .container .row .col-md-6 .responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .main_events h1 {
@@ -268,15 +301,12 @@ footer form fieldset {
   text-align: center;
   justify-content: center;
 }
-footer form fieldset legend {
-  font-weight: bold;
-}
 footer form fieldset label {
   display: block;
   margin-bottom: 3px;
 }
 footer form fieldset input[type=text] {
-  width: 60%;
+  width: 50%;
   padding: 5px;
   box-sizing: border-box;
 }
@@ -368,6 +398,22 @@ footer p {
   }
   footer {
     padding: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  .display-5 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  .display-5 {
+    font-size: 1.5rem;
   }
 }
 

@@ -14,27 +14,52 @@
   text-align: center
   color: #f1efef
 
-  .distintivo
-    color: $primary-color
-    font-family: $font-stack
-    font-weight: bold
-    margin-bottom: 20px
-    font-size: 3em
-    text-align: center
-    padding: 1em
-    background-color: $secondary-color
-    border-radius: 10px
-
   &:hover
     color: darken($primary-color, 10%)
     background-color: lighten($secondary-color, 50%,)
+ 
+h1.distintivo
+  font-size: 2.5rem
+  margin-bottom: 1rem
+  color: $primary-color
+  font-family: $font-stack
+  font-weight: bold
+  text-align: center
+  padding: 1em
+  background-color: $secondary-color
+  border-radius: 10px
+  
+  @include respond-to(small)
+    font-size: 1.8rem
 
-  a.bandcamp
-    font-size: 1.5rem
-    color: $text-color
-    text-decoration: none
-    background-color: rgba(255, 255, 255, 0.8)
-    padding: 10px 20px
-    border-radius: 10px
-    &:hover
-      background-color: rgba(51, 146, 11, 0.6)
+  @include respond-to(medium)
+    font-size: 2rem
+
+  @include respond-to(large)
+    font-size: 2.2rem
+
+a.bandcamp
+  display: inline-block
+  margin-top: 1rem
+  padding: 0.5rem 1rem
+  text-decoration: none
+  border-radius: 0.25rem
+  font-size: 1.5rem
+  color: $text-color
+  background-color: rgba(255, 255, 255, 0.8)
+
+  @include respond-to(small)
+    font-size: 1rem
+    padding: 0.4rem 0.8rem
+
+  @include respond-to(medium)
+    font-size: 1.1rem
+    padding: 0.45rem 0.9rem
+
+  @include respond-to(large)
+    font-size: 1.15rem
+    padding: 0.5rem 1rem
+
+  &:hover
+    color: darken($primary-color, 10%)
+    background-color: rgba(51, 146, 11, 0.6)

@@ -1,25 +1,29 @@
 .main_listend
-    .h1
-      margin: 20px
-      padding: 20px
-    .spotify
-        margin: 20px
-        padding: 20px
-        display: grid
-        justify-items: start
-        padding: 20px
-        margin: 20px
-    .celebration
-        margin: 20px
-        padding: 20px
-        display: grid
-        grid-template-columns: 1fr 1fr
-        gap: 20px
-        justify-items: center
-        text-align: start
+  padding: 20px
+
+  h1
+    text-align: start
+    margin-bottom: 20px
+
+  .spotify 
+    .bandcamp
+      margin-bottom: 20px
+      text-align: center
+      display: flex
+
+.celebration
+  .container
+    .row
+      .col-md-6
         .bandcamp
-          justify-items: center
-          .responsive-iframe
-            border: 0
-            width: 130%
-            height: 550px
+          position: relative
+          padding-top: 56.25%
+          height: 0
+          overflow: hidden
+
+        .responsive-iframe
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
