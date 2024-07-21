@@ -92,9 +92,13 @@ a.bandcamp:hover {
   background-color: rgba(51, 146, 11, 0.6);
 }
 
-.main_band h1 {
-  margin: 20px;
+.main_band {
   padding: 20px;
+  margin: 20px;
+}
+.main_band h1 {
+  margin: 10px;
+  padding: 10px;
 }
 
 .grid-container {
@@ -115,30 +119,34 @@ a.bandcamp:hover {
   width: 80%;
   margin: 0px auto;
   display: block;
+  border: 10px solid rgb(245, 253, 206);
   transition: transform 1s;
 }
 .grid-container .div_histori img:hover {
   transform: scale(1.1) translateX(20px);
 }
 
-.franytiti .grid-fran, .franytiti .grid-betsy {
+.franytiti .grid-fran .row .col-md-6 h2.display-6, .franytiti .grid-betsy .row .col-md-6 h2.display-6 {
   text-align: center;
 }
-.franytiti img {
-  width: 500px;
-  height: auto;
+.franytiti img.img-fluid {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+  border: 10px solid rgb(245, 253, 206);
   transition: transform 1s;
 }
-.franytiti img:hover {
-  transform: scale(1.1) translateX(20px);
+.franytiti img.img-fluid:hover {
+  transform: scale(1.1) translateX(10px);
 }
 
 .main_listend {
   padding: 20px;
+  margin: 20px;
 }
 .main_listend h1 {
-  text-align: start;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 .main_listend .spotify .bandcamp {
   margin-bottom: 20px;
@@ -160,14 +168,18 @@ a.bandcamp:hover {
   height: 100%;
 }
 
-.main_events h1 {
+.main_events {
   padding: 20px;
   margin: 20px;
+}
+.main_events h1 {
+  padding: 10px;
+  margin: 10px;
 }
 
 .eventos {
   padding: 20px;
-  margin: 30px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -204,9 +216,8 @@ a.bandcamp:hover {
   margin: 20px;
 }
 .main_contact h1 {
-  font-weight: bolder;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 .main_contact .form-group {
   gap: 50px;
@@ -238,38 +249,21 @@ a.bandcamp:hover {
 }
 
 .head {
-  background-image: linear-gradient(rgba(114, 243, 102, 0.5607843137), #064b06);
+  background-image: linear-gradient(#064b06, rgba(114, 243, 102, 0.5607843137));
   padding: 10px 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.head .menu ul {
-  padding: 20px 20px;
-  margin-left: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 500px;
-}
-.head .menu ul li {
-  list-style: none;
-}
-.head .menu ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  transition: 1s;
-}
-.head .menu ul li a:hover {
-  transform: scale(1.5);
-  color: #faf8f8;
 }
 .head .redes {
   display: flex;
   justify-content: space-around;
   width: 200px;
   padding: 10px 20px;
+}
+.head .redes a:hover {
+  transform: scale(1.5);
+  color: #faf8f8;
 }
 .head .redes a {
   transition: 500ms;
@@ -289,7 +283,7 @@ a.bandcamp:hover {
 
 footer {
   padding: 10px;
-  background-image: linear-gradient(#064b06, rgba(114, 243, 102, 0.5607843137));
+  background-image: linear-gradient(rgba(114, 243, 102, 0.5607843137), #064b06);
 }
 footer form {
   margin-bottom: 10px;
@@ -323,20 +317,6 @@ footer p {
   text-align: center;
 }
 
-@media (max-width: 1200px) {
-  .main_contact {
-    padding: 15px;
-  }
-  footer {
-    padding: 15px;
-  }
-  .main_contact {
-    padding: 10px;
-  }
-  footer {
-    padding: 10px;
-  }
-}
 @media (max-width: 1000px) {
   .contenedor-superior {
     flex-direction: column;
@@ -398,22 +378,6 @@ footer p {
   }
   footer {
     padding: 5px;
-  }
-}
-@media (max-width: 768px) {
-  .display-4 {
-    font-size: 2.5rem;
-  }
-  .display-5 {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 576px) {
-  .display-4 {
-    font-size: 2rem;
-  }
-  .display-5 {
-    font-size: 1.5rem;
   }
 }
 

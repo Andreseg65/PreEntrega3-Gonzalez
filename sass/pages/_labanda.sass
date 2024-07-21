@@ -1,7 +1,10 @@
 .main_band
+  padding: 20px
+  margin: 20px
+
   h1
-    margin: 20px
-    padding: 20px
+    margin: 10px
+    padding: 10px
     
 .grid-container
   margin: 20px
@@ -19,20 +22,26 @@
       width: 80%
       margin: 0px auto
       display: block
+      border: 10px solid $bg-color
       transition: transform $transition-duration
       &:hover
         transform: scale(1.1) translateX(20px)
 
 .franytiti
   .grid-fran, .grid-betsy
-    text-align: center
+    .row
+      .col-md-6
+        h2.display-6
+          text-align: center
 
-  img
-    width: 500px
-    height: auto
+  img.img-fluid
+    height: 400px
+    object-fit: cover
+    width: 100%
+    border: 10px solid $bg-color
     transition: transform $transition-duration
     &:hover
-      transform: scale(1.1) translateX(20px)
+      transform: scale(1.1) translateX(10px)
 
   
   
