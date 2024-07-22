@@ -102,8 +102,6 @@ a.bandcamp:hover {
 }
 
 .grid-container {
-  margin: 20px;
-  padding: 20px;
   justify-items: center;
   align-items: center;
 }
@@ -125,17 +123,12 @@ a.bandcamp:hover {
 .grid-container .div_histori img:hover {
   transform: scale(1.1) translateX(20px);
 }
-
-.franytiti .grid-fran .row .col-md-6 h2.display-6, .franytiti .grid-betsy .row .col-md-6 h2.display-6 {
-  text-align: center;
-}
-.franytiti img.img-fluid {
-  height: 400px;
-  object-fit: cover;
+.grid-container img.img-fluid {
   width: 100%;
   border: 10px solid rgb(245, 253, 206);
   transition: transform 1s;
 }
+
 .main_listend {
   padding: 20px;
   margin: 20px;
@@ -145,7 +138,6 @@ a.bandcamp:hover {
   margin: 10px;
 }
 .main_listend .spotify .bandcamp {
-  margin-bottom: 20px;
   text-align: center;
   display: flex;
 }
@@ -165,46 +157,36 @@ a.bandcamp:hover {
 }
 
 .main_events {
+  align-items: center;
   padding: 20px;
   margin: 20px;
 }
 .main_events h1 {
-  padding: 10px;
-  margin: 10px;
-}
-
-.eventos {
-  padding: 20px;
   margin: 20px;
+}
+.main_events h1 .eventos {
   display: flex;
   flex-direction: column;
 }
-.eventos .contenedor-superior {
+.main_events .contenedor-superior {
   display: flex;
 }
-.eventos .contenedor-superior img {
+.main_events .contenedor-superior img {
   flex: 30%;
   margin: 0 10px;
+  transition: transform 1s;
 }
-.eventos .contenedor-superior table {
+.main_events .contenedor-superior img:hover {
+  transform: scale(1.1) translateX(10px);
+}
+.main_events .contenedor-superior table {
   flex: 50%;
-  margin: 0 10px;
+  margin: 20px 10px;
 }
-.eventos article {
+.main_events article {
   margin-top: 40px;
   margin-left: 10px;
   margin-right: 10px;
-}
-.eventos .container_events {
-  display: inline-block;
-  overflow: hidden;
-}
-.eventos .container_events img {
-  display: block;
-  transition: transform 1s;
-}
-.eventos .container_events:hover {
-  transform: scale(1.1) translateX(10px);
 }
 
 .main_contact {
@@ -214,6 +196,12 @@ a.bandcamp:hover {
 .main_contact h1 {
   padding: 10px;
   margin: 10px;
+}
+.main_contact img.top-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: auto;
 }
 .main_contact .form-group {
   gap: 50px;
@@ -246,7 +234,7 @@ a.bandcamp:hover {
 
 .head {
   background-image: linear-gradient(#04a704, rgba(180, 245, 174, 0.56));
-  padding: 10px 20px;
+  padding: 15px 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -337,6 +325,16 @@ footer p {
   }
   .header .redes a {
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .top-image {
+    width: 150px;
+  }
+}
+@media (min-width: 992px) {
+  .top-image {
+    width: 200px;
   }
 }
 @media (max-width: 768px) {

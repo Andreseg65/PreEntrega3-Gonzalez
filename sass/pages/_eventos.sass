@@ -1,16 +1,15 @@
 .main_events
+  align-items: center
   padding: 20px
   margin: 20px
 
   h1
-    padding: 10px
-    margin: 10px
+    // padding: 10px
+    margin: 20px
 
-.eventos
-  padding: 20px
-  margin: 20px
-  display: flex
-  flex-direction: column
+    .eventos
+      display: flex
+      flex-direction: column
 
   .contenedor-superior
     display: flex
@@ -18,21 +17,16 @@
     img
       flex: 30%
       margin: 0 10px
+      transition: transform $transition-duration
+      &:hover
+        transform: scale(1.1) translateX(10px)
 
     table
       flex: 50%
-      margin: 0 10px
+      margin: 20px 10px
 
   article
     margin-top: 40px
     margin-left: 10px
     margin-right: 10px
-
-  .container_events
-    display: inline-block
-    overflow: hidden
-    img
-      display: block
-      transition: transform $transition-duration
-    &:hover
-      transform: scale(1.1) translateX(10px)
+   
