@@ -111,6 +111,7 @@ a.bandcamp:hover {
   align-items: center;
 }
 .grid-container .div_histori h2 {
+  margin-top: 40px;
   text-align: center;
 }
 .grid-container .div_histori img {
@@ -121,12 +122,22 @@ a.bandcamp:hover {
   transition: transform 1s;
 }
 .grid-container .div_histori img:hover {
-  transform: scale(1.1) translateX(20px);
+  transform: scale(0.9);
+}
+.grid-container .franytiti h2 {
+  margin-top: 40px;
+}
+.grid-container .franytiti h2 p {
+  margin-top: 20px;
 }
 .grid-container img.img-fluid {
   width: 100%;
-  border: 10px solid rgb(245, 253, 206);
+  padding: 10px;
+  border: 7px solid rgb(245, 253, 206);
   transition: transform 1s;
+}
+.grid-container img.img-fluid:hover {
+  transform: scale(0.9);
 }
 
 .main_listend {
@@ -177,27 +188,51 @@ a.bandcamp:hover {
   transition: transform 1s;
 }
 .main_events .contenedor-superior img:hover {
-  transform: scale(1.1) translateX(10px);
+  transform: scale(0.9);
 }
 .main_events .contenedor-superior table {
   flex: 50%;
-  margin: 20px 10px;
+  margin: 20px;
+  text-align: center;
 }
 .main_events article {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
+.container_events .container h3 {
+  margin-top: 40px;
+}
+.container_events .container img {
+  flex: 30%;
+  transition: transform 1s;
+}
+.container_events .container img:hover {
+  transform: scale(0.9);
+}
+.container_events .container p {
+  margin-top: 20px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
 .main_contact {
-  padding: 20px;
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main_contact .row {
+  flex-grow: 1;
 }
 .main_contact h1 {
   padding: 10px;
   margin: 10px;
 }
-.main_contact img.top-image {
+.main_contact img.img-fluid {
   background-size: cover;
   background-repeat: no-repeat;
   width: 500px;

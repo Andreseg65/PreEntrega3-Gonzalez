@@ -4,7 +4,6 @@
   margin: 20px
 
   h1
-    // padding: 10px
     margin: 20px
 
     .eventos
@@ -19,14 +18,26 @@
       margin: 0 10px
       transition: transform $transition-duration
       &:hover
-        transform: scale(1.1) translateX(10px)
+        transform: scale(0.9)
 
     table
       flex: 50%
-      margin: 20px 10px
-
+      margin: 20px
+      text-align: center
+  
   article
-    margin-top: 40px
+    margin-top: 30px
     margin-left: 10px
     margin-right: 10px
-   
+
+.container_events
+  .container
+    h3
+      margin-top: 40px
+    img
+      flex: 30%
+      transition: transform $transition-duration
+      &:hover
+        transform: scale(0.9)
+    p
+      margin-top: 20px
